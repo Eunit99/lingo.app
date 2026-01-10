@@ -32,6 +32,10 @@ export const runLocalizerActor = async (params: LocalizerInput) => {
       throw new Error("Actor run failed to start or return.");
     }
 
+    if (run.status !== 'SUCCEEDED') {
+      throw new Error(`Actor run failed with status: ${run.status}`);
+    }
+
     // Fetch results from dataset
     const { items } = await client.dataset(run.defaultDatasetId).listItems();
     return items;
