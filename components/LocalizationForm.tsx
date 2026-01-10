@@ -69,13 +69,13 @@ export default function LocalizationForm() {
         <div className="flex space-x-4 mb-6 border-b border-slate-700/50 pb-4">
           <button
             onClick={() => setMode('WEB')}
-            className={`text-sm font-medium px-4 py-2 rounded-lg transition-colors ${mode === 'WEB' ? 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/30' : 'text-slate-400 hover:text-white'}`}
+            className={`text-sm font-medium px-4 py-2 rounded-lg transition-colors ${mode === 'WEB' ? 'bg-lingo/20 text-lingo border border-lingo/30' : 'text-slate-400 hover:text-white'}`}
           >
             Web Scraper
           </button>
           <button
             onClick={() => setMode('TEXT')}
-            className={`text-sm font-medium px-4 py-2 rounded-lg transition-colors ${mode === 'TEXT' ? 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/30' : 'text-slate-400 hover:text-white'}`}
+            className={`text-sm font-medium px-4 py-2 rounded-lg transition-colors ${mode === 'TEXT' ? 'bg-lingo/20 text-lingo border border-lingo/30' : 'text-slate-400 hover:text-white'}`}
           >
             Text Localizer
           </button>
@@ -96,12 +96,18 @@ export default function LocalizationForm() {
             </div>
           ) : (
             <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2">Text Content</label>
+              <div className="flex justify-between items-center mb-2">
+                <label className="block text-sm font-medium text-slate-300">Text Content</label>
+                <span className={`text-xs ${textInput.length >= 500 ? 'text-red-400' : 'text-slate-500'}`}>
+                  {textInput.length}/500
+                </span>
+              </div>
               <textarea
                 placeholder="Paste your text here to localize..."
                 className="input-field min-h-[150px]"
                 value={textInput}
-                onChange={(e) => setTextInput(e.target.value)}
+                onChange={(e) => setTextInput(e.target.value.slice(0, 500))}
+                maxLength={500}
                 required={mode === 'TEXT'}
               />
             </div>
@@ -116,7 +122,7 @@ export default function LocalizationForm() {
                   type="button"
                   onClick={() => toggleLang(lang.code)}
                   className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${selectedLangs.includes(lang.code)
-                    ? 'bg-indigo-500 text-white border-indigo-500'
+                    ? 'bg-lingo text-slate-900 border-lingo'
                     : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-slate-600'
                     }`}
                 >
@@ -188,13 +194,13 @@ function ResultCard({ item }: { item: any }) {
     <div className="card overflow-hidden">
       <div className="mb-4">
         <h4 className="text-lg font-medium text-white mb-1">{item.title || 'Untitled Result'}</h4>
-        <a href={item.url} target="_blank" className="text-sm text-indigo-400 hover:text-indigo-300 truncate block">{item.url}</a>
+        <a href={item.url} target="_blank" className="text-sm text-lingo hover:text-lingo-hover truncate block">{item.url}</a>
       </div>
 
       <div className="border-b border-slate-700/50 mb-4 flex space-x-4 overflow-x-auto pb-2">
         <button
           onClick={() => setActiveTab('original')}
-          className={`text-sm font-medium whitespace-nowrap transition-colors ${activeTab === 'original' ? 'text-white border-b-2 border-indigo-500 pb-1' : 'text-slate-400 hover:text-slate-300'}`}
+          className={`text-sm font-medium whitespace-nowrap transition-colors ${activeTab === 'original' ? 'text-white border-b-2 border-lingo pb-1' : 'text-slate-400 hover:text-slate-300'}`}
         >
           Original
         </button>
@@ -202,7 +208,7 @@ function ResultCard({ item }: { item: any }) {
           <button
             key={lang}
             onClick={() => setActiveTab(lang)}
-            className={`text-sm font-medium whitespace-nowrap uppercase transition-colors ${activeTab === lang ? 'text-white border-b-2 border-indigo-500 pb-1' : 'text-slate-400 hover:text-slate-300'}`}
+            className={`text-sm font-medium whitespace-nowrap uppercase transition-colors ${activeTab === lang ? 'text-white border-b-2 border-lingo pb-1' : 'text-slate-400 hover:text-slate-300'}`}
           >
             {lang}
           </button>

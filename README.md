@@ -44,5 +44,5 @@ A premium AI-powered localization tool built with Next.js, TailwindCSS, and [Api
 ## Credits
 
 - Built by [Eunit](https://eunit.me)
-- Read the detailed article on [Eunit.me]()
+- Read the detailed article on [Eunit.me](build-a-global-internationalization-i18n-app-with-nextjs-and-ai)
 - Powered by [Apify](https://apify.com) & [Lingo.dev](https://lingo.dev)

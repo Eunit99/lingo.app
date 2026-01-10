@@ -16,12 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950 selection:bg-indigo-500/30`}>
+      <body className={`${inter.className} min-h-screen bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 selection:bg-lingo/30`}>
         <div className="fixed inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
         <main className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <header className="flex justify-between items-center py-6 mb-12">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center transform rotate-3">
+              <div className="w-8 h-8 bg-lingo rounded-lg flex items-center justify-center transform rotate-3">
                 <span className="text-xl font-bold text-white">L</span>
               </div>
               <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">lingo.app</span>
