@@ -1,6 +1,6 @@
 # Lingo.app
 
-A premium AI-powered localization tool built with Next.js, TailwindCSS, and [Apify](https://www.apify.com?fpr=eunit).
+A premium [AI-powered localization](https://lingo-app-azure.vercel.app/) tool built with Next.js, TailwindCSS, and [Apify](https://www.apify.com?fpr=eunit).
 
 ![Screenshot 1](./screenshots/screenshot1.png)
 
@@ -43,6 +43,7 @@ A premium AI-powered localization tool built with Next.js, TailwindCSS, and [Api
 
 ## Credits
 
-- Built by [Eunit](https://eunit.me)
-- Read the detailed article on [Eunit.me](build-a-global-internationalization-i18n-app-with-nextjs-and-ai)
-- Powered by [Apify](https://apify.com) & [Lingo.dev](https://lingo.dev)
+- Built by [Eunit](https://eunit.me) 💡
+- Read the detailed article on [Eunit.me](build-a-global-internationalization-i18n-app-with-nextjs-and-ai): [Build a Global Internationalization (i18n) App with Next.js and AI](https://eunit.me/build-a-global-internationalization-i18n-app-with-nextjs-and-ai) 📖
+- Powered by [Apify](https://apify.com) & [Lingo.dev](https://lingo.dev) ⚡
+- View live [lingo-app-azure.vercel.app](https://lingo-app-azure.vercel.app/) 🚀
