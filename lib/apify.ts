@@ -11,7 +11,7 @@ export interface LocalizerInput {
 
 export const runLocalizerActor = async (params: LocalizerInput) => {
   const { token, lingoApiKey, mode, targetLanguages, startUrls, text } = params;
-  
+
   const client = new ApifyClient({
     token: token,
   });
@@ -29,7 +29,7 @@ export const runLocalizerActor = async (params: LocalizerInput) => {
     const run = await client.actor("eunit/ai-website-content-localizer-scraper").call(input);
 
     if (!run) {
-        throw new Error("Actor run failed to start or return.");
+      throw new Error("Actor run failed to start or return.");
     }
 
     // Fetch results from dataset

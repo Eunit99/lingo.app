@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Hero() {
   return (
     <div className="text-center max-w-3xl mx-auto space-y-6">

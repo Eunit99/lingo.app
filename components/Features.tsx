@@ -1,3 +1,5 @@
+import React from 'react';
+
 const features = [
   {
     title: '83+ Languages',

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function LocalizationForm() {
   const [mode, setMode] = useState<'WEB' | 'TEXT'>('WEB');
@@ -149,7 +149,7 @@ export default function LocalizationForm() {
             <button
               type="submit"
               disabled={loading}
-              className={`btn-primary flex items-center space-x-2 ${loading ? 'opacity-75 cursor-wait' : ''}`}
+              className={`btn-primary flex items-center space-x-2 ${loading ? 'opacity-75 cursor-wait pointer-events-none' : ''}`}
             >
               {loading && (
                 <svg className="animate-spin h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">

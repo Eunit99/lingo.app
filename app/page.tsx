@@ -1,3 +1,4 @@
+import React from 'react';
 import Hero from '@/components/Hero';
 import LocalizationForm from '@/components/LocalizationForm';
 import Features from '@/components/Features';
