@@ -17,6 +17,10 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Lingo API Key is required. Please provide it in the form or set LINGO_API_KEY env." }, { status: 400 });
     }
 
+    if (mode === 'TEXT' && text && text.length > 500) {
+      return NextResponse.json({ error: "Text content exceeds the 500 character limit." }, { status: 400 });
+    }
+
     const startUrls = url ? [{ url }] : undefined;
 
     // Default languages if not provided
