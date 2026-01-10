@@ -41,6 +41,10 @@ A premium [AI-powered localization](https://lingo-app-azure.vercel.app/) tool bu
 - **Backend API**: Next.js API Routes acting as a proxy to Apify.
 - **Integration**: `apify-client` triggers the [eunit/ai-website-content-localizer-scraper](https://apify.com/eunit/ai-website-content-localizer-scraper) Actor.
 
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on how to get started.
+
 ## Credits
 
 - Built by [Eunit](https://eunit.me) 💡
