@@ -48,6 +48,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ## Credits
 
 - Built by [Eunit](https://eunit.me) 💡
-- Read the detailed article on [Eunit.me](build-a-global-internationalization-i18n-app-with-nextjs-and-ai): [Build a Global Internationalization (i18n) App with Next.js and AI](https://eunit.me/build-a-global-internationalization-i18n-app-with-nextjs-and-ai) 📖
+- Read the detailed article on [Eunit.me](https://www.eunit.me/blog/build-a-global-internationalization-i18n-app-with-nextjs-and-ai): [Build a Global Internationalization (i18n) App with Next.js and AI](https://www.eunit.me/blog/build-a-global-internationalization-i18n-app-with-nextjs-and-ai) 📖
 - Powered by [Apify](https://apify.com) & [Lingo.dev](https://lingo.dev) ⚡
 - View live [lingo-app-azure.vercel.app](https://lingo-app-azure.vercel.app/) 🚀
